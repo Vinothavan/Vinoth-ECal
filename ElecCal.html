@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> This is an Electricity Bill Calculator </title>
+		<style>
+			h1
+			{
+				font-size:40px;
+			}
+			body
+			{
+				font-family : Monospace;
+				background-color : #222;
+				color : white;
+			}
+			reducedCol 
+			{
+				margin-top:10vh;
+				background-color : #403D3F;
+				border : 0px #FFF solid;
+			}
+			div{
+				background-color:#997;
+				color:white;
+				font-size:20px;
+				font-weight:bold;
+				align-content: center;
+				text-align: center;
+				border: 2px solid black;
+				border-radius: 25px;
+				padding: 30px;
+				width: 500px;
+				height: 250px;
+			}
+			a
+			{
+				font-size: 15px;
+				font-family:sans-serif;
+				font-weight:bold;
+			}
+			button
+			{
+				font-size:20px;
+				font-weight:bold;
+				padding: 5px;
+				border-radius: 10px;
+			}
+			Button:hover 
+			{
+				border : 1.5px solid white;
+				background-color : #353535 !important;
+				color : white !important;
+				cursor:pointer;
+			}
+			p
+			{
+				color:#999;
+				font-size:25px;
+				font-family:Monospace;
+				font-weight:bold;
+				font-style:italic;
+				
+			}
+		
+		</style>
+	</head>
+	<body>
+		<h1><center> Domestic Electricity Bill Calculator </center></h1>
+		<form>
+			<center>
+				<div> 
+					<span>
+						<label> No of Units Used : </label>
+						<input type="number" name="number" id="txtunit" placeholder="Enter the Units"> kWh <br><br><br><br><br>
+					</span>
+					<span>
+						<input type="reset" name="clear" value="clear"> <br> <br>
+					</span>
+					<span id="YourBill">
+						<button onclick="calElectricityBill()"> Calculate my Bill </button>
+					</span>
+					<br>
+				</div>
+				<br>
+				<a href="https://roar.media/english/life/reports/electricity-bill-calculated-analysis" target="_self"> More Information about how my bill is calculated </a>
+				&nbsp &nbsp &nbsp &nbsp <a href="https://ceb.lk/bill-calculation-commercial/en" target="_self"> Go to CEB website </a>
+				<br><br>
+				<p>
+					<u> Created by : Vinothavan </u>
+				</p>
+			</center>
+			<script type="text/javascript" src="cal.js"></script>
+			
+		</form>
+	</body>
+</html>
